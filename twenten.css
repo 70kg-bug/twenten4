@@ -13,7 +13,7 @@ h2 {
     margin: 5px;
     font-size: medium;
 }
-div.font{
+div.fontt{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: xx-large;
@@ -24,25 +24,17 @@ div.font{
 }
 h1.font{
     font-family: twenten;
-    font-size: 150px;
+    font-size: 800%;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 h1.context{
     text-align: center;
     margin: 15px;
     font-size: 50px;
 }
-
-.room-container{
-    position: relative;
-}
-
 .chair1{
-    position: absolute;
-
-    top: 150px;
-    left: 20%;
     width: 150px;
     height: 150px;
     box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
@@ -54,20 +46,17 @@ h1.context{
 }
 .chair1:hover{
     transition: 1.5s;
-    left: 200px;
-    width: 400px;
-    height: 400px;    
+    width: 180px;
+    height: 180px;    
     background-image: url('wishes_background/quynh.jpg');
+    opacity: 1;
     transform: scale(2);
 }
 .chair2{
-    position: absolute;
-
-    top: 130px;
-    right: 20%;
     width: 150px;
     height: 150px;
-    box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
+    box-shadow: 5px 2px 5px 2px palevioletred;    
+    transition: 0.3s;
     border-radius: 50%;
     border: 3px solid whitesmoke;
     background-image: url('character/vy.png');
@@ -76,17 +65,13 @@ h1.context{
 }
 .chair2:hover{
     transition: 1.5s;
-    right: 200px;
-    width: 400px;
-    height: 400px;     
+    width: 180px;
+    height: 180px;     
     background-image: url('wishes_background/vy.jpg');
+    opacity: 0.8;
     transform: scale(2);
 }
 .chair3{
-    position: absolute;
-
-    bottom: 20px;
-    left: 20%;
     width: 150px;
     height: 150px;
     box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
@@ -98,17 +83,13 @@ h1.context{
 }
 .chair3:hover{
     transition: 1.5s;
-    left: 200px;
-    width: 400px;
-    height: 400px;    
+    width: 180px;
+    height: 180px;    
     background-image: url('wishes_background/my.jpg');
+    opacity: 0.8;
     transform: scale(2);
 }
 .chair4{
-    position: absolute;
-
-    bottom: 20px;
-    right:20%;
     width: 150px;
     height: 150px;
     box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
@@ -120,36 +101,22 @@ h1.context{
 }
 .chair4:hover{
     transition: 1.5s;
-    right: 200px;
-    width: 400px;
-    height: 400px;    
+    width: 180px;
+    height: 180px;    
     background-image: url('wishes_background/khanh.jpg');
+    opacity: 0.8;
     transform: scale(2);
 }
 a{
     text-decoration: none;
 }
-
-
-
-
-
-/* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
-  .my-element {
-    display: none; /* Hide the element */
-  }
-  .mobile-only-element {
-    display: block; /* Show a mobile-specific element */
-  }
+table, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
 }
 
-/* Styles for screens larger than or equal to 768px */
-@media (min-width: 768px) {
-  .my-element {
-    width: 50%;
-  }
-  .mobile-only-element {
-    display: none;
-  }
-}
+
