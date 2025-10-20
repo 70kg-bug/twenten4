@@ -1,0 +1,155 @@
+body{
+    background-image: url("index_background/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*{
+    color: black;
+
+}
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 5px;
+    font-size: medium;
+}
+div.font{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: xx-large;
+}
+@font-face {
+    font-family: twenten;
+    src: url(fonts/romantic/RomanticSession-zre1G.otf);
+}
+h1.font{
+    font-family: twenten;
+    font-size: 150px;
+    text-align: center;
+    margin: 30px;
+}
+h1.context{
+    text-align: center;
+    margin: 15px;
+    font-size: 50px;
+}
+
+.room-container{
+    position: relative;
+}
+
+.chair1{
+    position: absolute;
+
+    top: 150px;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-image: url('character/quynh.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chair1:hover{
+    transition: 1.5s;
+    left: 200px;
+    width: 400px;
+    height: 400px;    
+    background-image: url('wishes_background/quynh.jpg');
+    transform: scale(2);
+}
+.chair2{
+    position: absolute;
+
+    top: 130px;
+    right: 20%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-image: url('character/vy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chair2:hover{
+    transition: 1.5s;
+    right: 200px;
+    width: 400px;
+    height: 400px;     
+    background-image: url('wishes_background/vy.jpg');
+    transform: scale(2);
+}
+.chair3{
+    position: absolute;
+
+    bottom: 20px;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-image: url('character/my.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chair3:hover{
+    transition: 1.5s;
+    left: 200px;
+    width: 400px;
+    height: 400px;    
+    background-image: url('wishes_background/my.jpg');
+    transform: scale(2);
+}
+.chair4{
+    position: absolute;
+
+    bottom: 20px;
+    right:20%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 2px 5px 2px palevioletred;    transition: 0.3s;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    background-image: url('character/my.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chair4:hover{
+    transition: 1.5s;
+    right: 200px;
+    width: 400px;
+    height: 400px;    
+    background-image: url('wishes_background/khanh.jpg');
+    transform: scale(2);
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .my-element {
+    display: none; /* Hide the element */
+  }
+  .mobile-only-element {
+    display: block; /* Show a mobile-specific element */
+  }
+}
+
+/* Styles for screens larger than or equal to 768px */
+@media (min-width: 768px) {
+  .my-element {
+    width: 50%;
+  }
+  .mobile-only-element {
+    display: none;
+  }
+}
